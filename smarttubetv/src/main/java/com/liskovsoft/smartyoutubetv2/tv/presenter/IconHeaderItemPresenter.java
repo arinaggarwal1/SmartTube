@@ -45,11 +45,6 @@ public class IconHeaderItemPresenter extends RowHeaderPresenter {
         mDefaultIcon = new ColorDrawable(ContextCompat.getColor(viewGroup.getContext(), R.color.lb_grey));
 
         View view = inflater.inflate(R.layout.icon_header_item, null);
-        android.graphics.drawable.GradientDrawable selection = new android.graphics.drawable.GradientDrawable();
-        selection.setColor(0xFF34353A);
-        selection.setCornerRadius(8 * view.getResources().getDisplayMetrics().density);
-        selection.setAlpha(0);
-        view.setBackground(selection);
         view.setAlpha(mUnselectedAlpha); // Initialize icons to be at half-opacity.
 
         return new ViewHolder(view);
@@ -101,9 +96,6 @@ public class IconHeaderItemPresenter extends RowHeaderPresenter {
     protected void onSelectLevelChanged(RowHeaderPresenter.ViewHolder holder) {
         holder.view.setAlpha(mUnselectedAlpha + holder.getSelectLevel() *
                 (1.0f - mUnselectedAlpha));
-        if (holder.view.getBackground() != null) {
-            holder.view.getBackground().setAlpha(Math.round(255 * holder.getSelectLevel()));
-        }
     }
 
     private final RequestListener<Drawable> mErrorListener = new RequestListener<Drawable>() {

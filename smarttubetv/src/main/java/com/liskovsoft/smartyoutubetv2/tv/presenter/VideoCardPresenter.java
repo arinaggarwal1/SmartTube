@@ -79,24 +79,12 @@ public class VideoCardPresenter extends LongClickPresenter {
         cardView.setContentLinesNum(isCardMultilineSubtitleEnabled ? 2 : 1);
         cardView.enableTextAutoScroll(isCardTextAutoScrollEnabled);
         cardView.setTextScrollSpeed(cardTextScrollSpeed);
-        // Clip the thumbnail, not the entire card: text and focus elevation stay visible.
-        View thumbnail = cardView.findViewById(R.id.main_image_wrapper);
-        if (thumbnail != null && VERSION.SDK_INT >= 21 &&
-                MainUIData.instance(context).isUiTweakEnabled(MainUIData.UI_TWEAK_ROUNDED_CORNERS)) {
-            thumbnail.setOutlineProvider(new android.view.ViewOutlineProvider() {
-                @Override public void getOutline(View view, android.graphics.Outline outline) {
-                    outline.setRoundRect(0, 0, view.getWidth(), view.getHeight(),
-                            10 * view.getResources().getDisplayMetrics().density);
-                }
-            });
-            thumbnail.setClipToOutline(true);
-        }
         cardView.setFocusable(true);
         cardView.setFocusableInTouchMode(true);
         cardView.enableBadge(isBadgeEnabled());
         cardView.enableTitle(isTitleEnabled());
         cardView.enableContent(isContentEnabled());
-        cardView.setBackgroundColor(android.graphics.Color.TRANSPARENT);
+        cardView.setBackgroundColor(mDefaultBackgroundColor); // background is temporarily visible during animations
         //if (VERSION.SDK_INT >= 23 && MainUIData.instance(context).isUiTweakEnabled(MainUIData.UI_TWEAK_ROUNDED_CORNERS)) {
         //    cardView.setForeground(ContextCompat.getDrawable(context, R.drawable.lb_card_outline));
         //}
@@ -105,29 +93,26 @@ public class VideoCardPresenter extends LongClickPresenter {
     }
 
     private void updateCardBackgroundColor(ComplexImageCardView view, boolean selected) {
-        // Keep the artwork as the focus target; metadata stays quiet and readable.
+        int backgroundColor = selected ? mSelectedBackgroundColor : mDefaultBackgroundColor;
+        int textColor = selected ? mSelectedTextColor : mDefaultTextColor;
+
+        // Both background colors should be set because the view's
+        // background is temporarily visible during animations.
+        // NOTE: has visual bug with rounded corners
+        //view.setBackgroundColor(backgroundColor);
+
         View infoField = view.findViewById(R.id.info_field);
         if (infoField != null) {
-            infoField.setBackgroundColor(android.graphics.Color.TRANSPARENT);
+            infoField.setBackgroundColor(backgroundColor);
         }
-        View thumbnail = view.findViewById(R.id.main_image_wrapper);
-        if (thumbnail != null && VERSION.SDK_INT >= 23) {
-            android.graphics.drawable.GradientDrawable outline = new android.graphics.drawable.GradientDrawable();
-            outline.setColor(android.graphics.Color.TRANSPARENT);
-            float density = view.getResources().getDisplayMetrics().density;
-            outline.setCornerRadius(MainUIData.instance(view.getContext()).isUiTweakEnabled(MainUIData.UI_TWEAK_ROUNDED_CORNERS) ? 10 * density : 0);
-            outline.setStroke(selected ? Math.max(1, Math.round(3 * density)) : 0, android.graphics.Color.WHITE);
-            thumbnail.setForeground(outline);
-        }
+
         TextView titleText = view.findViewById(R.id.title_text);
         if (titleText != null) {
-            titleText.setTextColor(mDefaultTextColor);
-            titleText.setTypeface(null, selected ? android.graphics.Typeface.BOLD : android.graphics.Typeface.NORMAL);
+            titleText.setTextColor(textColor);
         }
         TextView contentText = view.findViewById(R.id.content_text);
         if (contentText != null) {
-            contentText.setTextColor(mDefaultTextColor);
-            contentText.setAlpha(0.68f);
+            contentText.setTextColor(textColor);
         }
     }
 

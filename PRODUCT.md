@@ -12,7 +12,7 @@ A Fire TV viewer navigating a television from across the room with a remote.
 
 ## Product Purpose
 
-NewTube is a personal SmartTube fork for discovering and watching YouTube content on TV, with a more modern YouTube-inspired interface and a separately installable identity.
+NewTube is a personal SmartTube fork for discovering and watching YouTube content on TV, with the original SmartTube interface and a separately installable identity.
 
 ## Operating Context
 
@@ -24,7 +24,7 @@ Preserve SmartTube's existing features, settings, playback, and account workflow
 
 ## Brand Commitments
 
-Name: NewTube. A modern YouTube-inspired experience with a distinct identity.
+Name: NewTube. SmartTube’s familiar interface with NewTube naming and logo.
 
 ## Product Principles
 

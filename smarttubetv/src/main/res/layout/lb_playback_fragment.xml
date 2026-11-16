@@ -61,13 +61,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top|right"
         android:gravity="right"
-        android:padding="12dp">
+        android:padding="10sp">
         <!-- Global clock -->
         <com.liskovsoft.smartyoutubetv2.tv.ui.widgets.time.DateTimeView
             android:id="@+id/global_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:visibility="gone"
             android:textColor="@color/white"
             android:shadowColor="@color/black"
@@ -81,7 +81,7 @@
             android:id="@+id/global_ending_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:visibility="gone"
             android:textColor="@color/white"
             android:shadowColor="@color/black"
