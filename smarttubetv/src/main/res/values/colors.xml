@@ -3,11 +3,17 @@
     <!-- MOD: Focused player button color (default: #66EEEEEE, new: #E8FFFFFF) -->
     <color name="lb_control_button_color">#86EEEEEE</color>
 
+    <!-- Search text stays legible in both typed and voice modes. -->
+    <color name="lb_search_bar_text">#FFF7F7F8</color>
+    <color name="lb_search_bar_text_speech_mode">#FFF7F7F8</color>
+    <color name="lb_search_bar_hint">#FFC2C2C8</color>
+    <color name="lb_search_bar_hint_speech_mode">#FFC2C2C8</color>
+
     <!-- Common colors -->
     <color name="default_background_gradient_start">#000000</color>
     <color name="default_background_gradient_end">#DDDDDD</color>
-    <color name="fastlane_background">#0096a6</color>
-    <color name="fastlane_background_dark">#004B53</color>
+    <color name="fastlane_background">#E32929</color>
+    <color name="fastlane_background_dark">#282125</color>
     <color name="default_light_grey">#343434</color>
     <color name="search_opaque">#0096a6</color>
     <color name="search_opaque_yellow">#ffaa3f</color>
@@ -20,12 +26,12 @@
     <color name="card_selected_text_black">#000000</color>
     <color name="card_selected_text_grey">#343434</color>
     <color name="card_default_background">#0096a6</color>
-    <color name="card_default_background_dark">#004B53</color>
+    <color name="card_default_background_dark">#262327</color>
     <color name="card_default_text">#FFFFFF</color>
 
     <!-- Browse fragment colors -->
     <color name="shelf_background">#282828</color>
-    <color name="shelf_background_dark">#131313</color>
+    <color name="shelf_background_dark">#151417</color>
     <color name="icon_background">#4A4F51</color>
     <color name="icon_alt_background">#2A2F51</color>
     <color name="player_background">#FF000000</color>
@@ -33,8 +39,8 @@
     <!-- Dark color scheme -->
     <color name="scheme_grey_background">#181818</color>
     <color name="scheme_grey_background_dark">#181818</color>
-    <color name="scheme_grey_shelf_background_dark">#000000</color>
-    <color name="scheme_grey_card_background_dark">#121212</color>
+    <color name="scheme_grey_shelf_background_dark">#111114</color>
+    <color name="scheme_grey_card_background_dark">#222226</color>
 
     <!-- Red color scheme -->
     <color name="scheme_red_background">#131313</color>
@@ -60,8 +66,8 @@
     <color name="foreground_material_light_mod">@android:color/black</color>
 
     <!-- Default Orb buttons colors: search, accounts, search settings etc -->
-    <color name="orb_color">@color/grey</color>
-    <color name="orb_bright_color">@color/grey</color>
+    <color name="orb_color">#303136</color>
+    <color name="orb_bright_color">#47494F</color>
     <color name="orb_icon_color">@color/white</color>
 
     <!-- Search page mic button color -->

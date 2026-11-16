@@ -71,3 +71,8 @@ tmp/
 fabric.properties
 *BAK.java
 hs_err_pid*.log
+
+# NewTube signing configuration is local and contains secrets.
+keystore.properties
+*.jks
+*.p12

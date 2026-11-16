@@ -200,7 +200,7 @@ public class BrowseFragment extends BrowseSupportFragment implements BrowseView 
         setBrandColor(ContextCompat.getColor(getContext(), brandColorRes));
 
         // Set search icon color.
-        setSearchAffordanceColor(ContextCompat.getColor(getContext(), brandAccentColorRes));
+        setSearchAffordanceColor(ContextCompat.getColor(getContext(), R.color.orb_color));
 
         setHeaderPresenterSelector(new PresenterSelector() {
             private final Map<Integer, Presenter> mPresenterMap = new HashMap<>();
