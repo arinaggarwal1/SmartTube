@@ -43,13 +43,13 @@ public class ChannelCardPresenter extends LongClickPresenter {
         mDefaultBackgroundColor =
                 ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.cardDefaultBackground));
         mDefaultTextColor =
-                ContextCompat.getColor(context, R.color.card_default_text);
+                ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.newtubeCardText));
         mNewContentBackgroundColor =
                 ContextCompat.getColor(context, R.color.dark_red);
         mSelectedBackgroundColor =
                 ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.cardSelectedBackground));
         mSelectedTextColor =
-                ContextCompat.getColor(context, R.color.card_selected_text_grey);
+                ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.newtubeSelectedText));
 
         updateDimensions(context);
 
@@ -72,7 +72,8 @@ public class ChannelCardPresenter extends LongClickPresenter {
         container.setOnFocusChangeListener((v, hasFocus) -> {
             int backgroundColor = hasFocus ? mSelectedBackgroundColor :
                     textView.getTag(R.id.channel_new_content) != null ? mNewContentBackgroundColor : mDefaultBackgroundColor;
-            int textColor = hasFocus ? mSelectedTextColor : mDefaultTextColor;
+            int textColor = hasFocus ? mSelectedTextColor :
+                    textView.getTag(R.id.channel_new_content) != null ? android.graphics.Color.WHITE : mDefaultTextColor;
             
             textView.setBackgroundColor(backgroundColor);
             textView.setTextColor(textColor);
@@ -105,6 +106,7 @@ public class ChannelCardPresenter extends LongClickPresenter {
 
         // We should setup props each time because object may be reused by the underlying RecyclerView
         textView.setBackgroundColor(video.hasNewContent ? mNewContentBackgroundColor : mDefaultBackgroundColor);
+        textView.setTextColor(video.hasNewContent ? android.graphics.Color.WHITE : mDefaultTextColor);
         textView.setTag(R.id.channel_new_content, video.hasNewContent ? true : null);
 
 

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="App.Theme.NewTube.Reading.Browse" parent="App.Theme.Leanback.Browse">
+        <item name="android:windowBackground">@color/newtube_reading_background</item>
+        <item name="brandColor">@color/newtube_reading_sidebar</item>
+        <item name="brandAccentColor">@color/newtube_reading_accent</item>
+        <item name="rowHeaderStyle">@style/NewTube.RowHeader</item>
+        <item name="shelfBackground">@color/newtube_reading_background</item>
+        <item name="cardDefaultBackground">@color/newtube_reading_card</item>
+        <item name="cardSelectedBackground">@color/newtube_reading_selected</item>
+        <item name="newtubeCardText">@color/newtube_reading_text</item>
+        <item name="newtubeSelectedText">@color/newtube_reading_text</item>
+        <item name="newtubeForeground">@color/newtube_reading_text</item>
+        <item name="android:colorAccent">@color/newtube_reading_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Reading.Player" parent="App.Theme.Leanback.Player">
+        <item name="shelfBackground">@color/newtube_reading_background</item>
+        <item name="cardDefaultBackground">@color/newtube_reading_card</item>
+        <item name="cardSelectedBackground">@color/newtube_reading_selected</item>
+        <item name="newtubeCardText">@color/newtube_reading_text</item>
+        <item name="newtubeSelectedText">@color/newtube_reading_text</item>
+        <item name="newtubeForeground">@color/newtube_reading_text</item>
+        <item name="android:colorAccent">@color/newtube_reading_accent</item>
+        <item name="playbackProgressPrimaryColor">@color/newtube_reading_accent</item>
+        <item name="playbackControlsIconHighlightColor">@color/newtube_reading_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Reading.Preferences" parent="App.Theme.Leanback.Preferences">
+        <item name="cardSelectedBackground">@color/newtube_reading_selected</item>
+        <item name="defaultBrandColor">@color/newtube_reading_accent</item>
+        <item name="newtubePreferenceBackground">@color/newtube_reading_background</item>
+        <item name="newtubePreferenceText">@color/newtube_reading_text</item>
+        <item name="newtubePreferenceSecondaryText">@color/newtube_reading_text</item>
+        <item name="newtubePreferenceItemBackground">@drawable/newtube_preference_focus</item>
+        <item name="android:colorPrimary">@color/newtube_reading_accent</item>
+        <item name="android:colorAccent">@color/newtube_reading_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Paper.Browse" parent="App.Theme.Leanback.Browse">
+        <item name="android:windowBackground">@color/newtube_paper_background</item>
+        <item name="brandColor">@color/newtube_paper_sidebar</item>
+        <item name="brandAccentColor">@color/newtube_paper_accent</item>
+        <item name="rowHeaderStyle">@style/NewTube.RowHeader</item>
+        <item name="shelfBackground">@color/newtube_paper_background</item>
+        <item name="cardDefaultBackground">@color/newtube_paper_card</item>
+        <item name="cardSelectedBackground">@color/newtube_paper_selected</item>
+        <item name="newtubeCardText">@color/newtube_paper_text</item>
+        <item name="newtubeSelectedText">@color/newtube_paper_text</item>
+        <item name="newtubeForeground">@color/newtube_paper_text</item>
+        <item name="android:colorAccent">@color/newtube_paper_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Paper.Player" parent="App.Theme.Leanback.Player">
+        <item name="shelfBackground">@color/newtube_paper_background</item>
+        <item name="cardDefaultBackground">@color/newtube_paper_card</item>
+        <item name="cardSelectedBackground">@color/newtube_paper_selected</item>
+        <item name="newtubeCardText">@color/newtube_paper_text</item>
+        <item name="newtubeSelectedText">@color/newtube_paper_text</item>
+        <item name="newtubeForeground">@color/newtube_paper_text</item>
+        <item name="android:colorAccent">@color/newtube_paper_accent</item>
+        <item name="playbackProgressPrimaryColor">@color/newtube_paper_accent</item>
+        <item name="playbackControlsIconHighlightColor">@color/newtube_paper_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Paper.Preferences" parent="App.Theme.Leanback.Preferences">
+        <item name="cardSelectedBackground">@color/newtube_paper_selected</item>
+        <item name="defaultBrandColor">@color/newtube_paper_accent</item>
+        <item name="newtubePreferenceBackground">@color/newtube_paper_background</item>
+        <item name="newtubePreferenceText">@color/newtube_paper_text</item>
+        <item name="newtubePreferenceSecondaryText">@color/newtube_paper_text</item>
+        <item name="newtubePreferenceItemBackground">@drawable/newtube_preference_focus</item>
+        <item name="android:colorPrimary">@color/newtube_paper_accent</item>
+        <item name="android:colorAccent">@color/newtube_paper_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Graphite.Browse" parent="App.Theme.Leanback.Browse">
+        <item name="android:windowBackground">@color/newtube_graphite_background</item>
+        <item name="brandColor">@color/newtube_graphite_sidebar</item>
+        <item name="brandAccentColor">@color/newtube_graphite_accent</item>
+        <item name="rowHeaderStyle">@style/NewTube.RowHeader</item>
+        <item name="shelfBackground">@color/newtube_graphite_background</item>
+        <item name="cardDefaultBackground">@color/newtube_graphite_card</item>
+        <item name="cardSelectedBackground">@color/newtube_graphite_selected</item>
+        <item name="newtubeCardText">@color/newtube_graphite_text</item>
+        <item name="newtubeSelectedText">@color/newtube_graphite_text</item>
+        <item name="newtubeForeground">@color/newtube_graphite_text</item>
+        <item name="android:colorAccent">@color/newtube_graphite_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Graphite.Player" parent="App.Theme.Leanback.Player">
+        <item name="shelfBackground">@color/newtube_graphite_background</item>
+        <item name="cardDefaultBackground">@color/newtube_graphite_card</item>
+        <item name="cardSelectedBackground">@color/newtube_graphite_selected</item>
+        <item name="newtubeCardText">@color/newtube_graphite_text</item>
+        <item name="newtubeSelectedText">@color/newtube_graphite_text</item>
+        <item name="newtubeForeground">@color/newtube_graphite_text</item>
+        <item name="android:colorAccent">@color/newtube_graphite_accent</item>
+        <item name="playbackProgressPrimaryColor">@color/newtube_graphite_accent</item>
+        <item name="playbackControlsIconHighlightColor">@color/newtube_graphite_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Graphite.Preferences" parent="App.Theme.Leanback.Preferences">
+        <item name="cardSelectedBackground">@color/newtube_graphite_selected</item>
+        <item name="defaultBrandColor">@color/newtube_graphite_sidebar</item>
+        <item name="newtubePreferenceBackground">@color/newtube_graphite_background</item>
+        <item name="newtubePreferenceText">@color/newtube_graphite_text</item>
+        <item name="newtubePreferenceSecondaryText">@color/newtube_graphite_text</item>
+        <item name="newtubePreferenceItemBackground">@drawable/newtube_preference_focus</item>
+        <item name="android:colorPrimary">@color/newtube_graphite_sidebar</item>
+        <item name="android:colorAccent">@color/newtube_graphite_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Midnight.Browse" parent="App.Theme.Leanback.Browse">
+        <item name="android:windowBackground">@color/newtube_midnight_background</item>
+        <item name="brandColor">@color/newtube_midnight_sidebar</item>
+        <item name="brandAccentColor">@color/newtube_midnight_accent</item>
+        <item name="rowHeaderStyle">@style/NewTube.RowHeader</item>
+        <item name="shelfBackground">@color/newtube_midnight_background</item>
+        <item name="cardDefaultBackground">@color/newtube_midnight_card</item>
+        <item name="cardSelectedBackground">@color/newtube_midnight_selected</item>
+        <item name="newtubeCardText">@color/newtube_midnight_text</item>
+        <item name="newtubeSelectedText">@color/newtube_midnight_text</item>
+        <item name="newtubeForeground">@color/newtube_midnight_text</item>
+        <item name="android:colorAccent">@color/newtube_midnight_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Midnight.Player" parent="App.Theme.Leanback.Player">
+        <item name="shelfBackground">@color/newtube_midnight_background</item>
+        <item name="cardDefaultBackground">@color/newtube_midnight_card</item>
+        <item name="cardSelectedBackground">@color/newtube_midnight_selected</item>
+        <item name="newtubeCardText">@color/newtube_midnight_text</item>
+        <item name="newtubeSelectedText">@color/newtube_midnight_text</item>
+        <item name="newtubeForeground">@color/newtube_midnight_text</item>
+        <item name="android:colorAccent">@color/newtube_midnight_accent</item>
+        <item name="playbackProgressPrimaryColor">@color/newtube_midnight_accent</item>
+        <item name="playbackControlsIconHighlightColor">@color/newtube_midnight_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Midnight.Preferences" parent="App.Theme.Leanback.Preferences">
+        <item name="cardSelectedBackground">@color/newtube_midnight_selected</item>
+        <item name="defaultBrandColor">@color/newtube_midnight_sidebar</item>
+        <item name="newtubePreferenceBackground">@color/newtube_midnight_background</item>
+        <item name="newtubePreferenceText">@color/newtube_midnight_text</item>
+        <item name="newtubePreferenceSecondaryText">@color/newtube_midnight_text</item>
+        <item name="newtubePreferenceItemBackground">@drawable/newtube_preference_focus</item>
+        <item name="android:colorPrimary">@color/newtube_midnight_sidebar</item>
+        <item name="android:colorAccent">@color/newtube_midnight_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Dusk.Browse" parent="App.Theme.Leanback.Browse">
+        <item name="android:windowBackground">@color/newtube_dusk_background</item>
+        <item name="brandColor">@color/newtube_dusk_sidebar</item>
+        <item name="brandAccentColor">@color/newtube_dusk_accent</item>
+        <item name="rowHeaderStyle">@style/NewTube.RowHeader</item>
+        <item name="shelfBackground">@color/newtube_dusk_background</item>
+        <item name="cardDefaultBackground">@color/newtube_dusk_card</item>
+        <item name="cardSelectedBackground">@color/newtube_dusk_selected</item>
+        <item name="newtubeCardText">@color/newtube_dusk_text</item>
+        <item name="newtubeSelectedText">@color/newtube_dusk_text</item>
+        <item name="newtubeForeground">@color/newtube_dusk_text</item>
+        <item name="android:colorAccent">@color/newtube_dusk_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Dusk.Player" parent="App.Theme.Leanback.Player">
+        <item name="shelfBackground">@color/newtube_dusk_background</item>
+        <item name="cardDefaultBackground">@color/newtube_dusk_card</item>
+        <item name="cardSelectedBackground">@color/newtube_dusk_selected</item>
+        <item name="newtubeCardText">@color/newtube_dusk_text</item>
+        <item name="newtubeSelectedText">@color/newtube_dusk_text</item>
+        <item name="newtubeForeground">@color/newtube_dusk_text</item>
+        <item name="android:colorAccent">@color/newtube_dusk_accent</item>
+        <item name="playbackProgressPrimaryColor">@color/newtube_dusk_accent</item>
+        <item name="playbackControlsIconHighlightColor">@color/newtube_dusk_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Dusk.Preferences" parent="App.Theme.Leanback.Preferences">
+        <item name="cardSelectedBackground">@color/newtube_dusk_selected</item>
+        <item name="defaultBrandColor">@color/newtube_dusk_sidebar</item>
+        <item name="newtubePreferenceBackground">@color/newtube_dusk_background</item>
+        <item name="newtubePreferenceText">@color/newtube_dusk_text</item>
+        <item name="newtubePreferenceSecondaryText">@color/newtube_dusk_text</item>
+        <item name="newtubePreferenceItemBackground">@drawable/newtube_preference_focus</item>
+        <item name="android:colorPrimary">@color/newtube_dusk_sidebar</item>
+        <item name="android:colorAccent">@color/newtube_dusk_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Light.Browse" parent="App.Theme.Leanback.Browse">
+        <item name="android:windowBackground">@color/newtube_light_background</item>
+        <item name="brandColor">@color/newtube_light_sidebar</item>
+        <item name="brandAccentColor">@color/newtube_light_accent</item>
+        <item name="rowHeaderStyle">@style/NewTube.RowHeader</item>
+        <item name="shelfBackground">@color/newtube_light_background</item>
+        <item name="cardDefaultBackground">@color/newtube_light_card</item>
+        <item name="cardSelectedBackground">@color/newtube_light_selected</item>
+        <item name="newtubeCardText">@color/newtube_light_text</item>
+        <item name="newtubeSelectedText">@color/newtube_light_text</item>
+        <item name="newtubeForeground">@color/newtube_light_text</item>
+        <item name="android:colorAccent">@color/newtube_light_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Light.Player" parent="App.Theme.Leanback.Player">
+        <item name="shelfBackground">@color/newtube_light_background</item>
+        <item name="cardDefaultBackground">@color/newtube_light_card</item>
+        <item name="cardSelectedBackground">@color/newtube_light_selected</item>
+        <item name="newtubeCardText">@color/newtube_light_text</item>
+        <item name="newtubeSelectedText">@color/newtube_light_text</item>
+        <item name="newtubeForeground">@color/newtube_light_text</item>
+        <item name="android:colorAccent">@color/newtube_light_accent</item>
+        <item name="playbackProgressPrimaryColor">@color/newtube_light_accent</item>
+        <item name="playbackControlsIconHighlightColor">@color/newtube_light_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Light.Preferences" parent="App.Theme.Leanback.Preferences">
+        <item name="cardSelectedBackground">@color/newtube_light_selected</item>
+        <item name="defaultBrandColor">@color/newtube_light_accent</item>
+        <item name="newtubePreferenceBackground">@color/newtube_light_background</item>
+        <item name="newtubePreferenceText">@color/newtube_light_text</item>
+        <item name="newtubePreferenceSecondaryText">@color/newtube_light_text</item>
+        <item name="newtubePreferenceItemBackground">@drawable/newtube_preference_focus</item>
+        <item name="android:colorPrimary">@color/newtube_light_accent</item>
+        <item name="android:colorAccent">@color/newtube_light_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Dark.Browse" parent="App.Theme.Leanback.Browse">
+        <item name="android:windowBackground">@color/newtube_dark_background</item>
+        <item name="brandColor">@color/newtube_dark_sidebar</item>
+        <item name="brandAccentColor">@color/newtube_dark_accent</item>
+        <item name="rowHeaderStyle">@style/NewTube.RowHeader</item>
+        <item name="shelfBackground">@color/newtube_dark_background</item>
+        <item name="cardDefaultBackground">@color/newtube_dark_card</item>
+        <item name="cardSelectedBackground">@color/newtube_dark_selected</item>
+        <item name="newtubeCardText">@color/newtube_dark_text</item>
+        <item name="newtubeSelectedText">@color/newtube_dark_text</item>
+        <item name="newtubeForeground">@color/newtube_dark_text</item>
+        <item name="android:colorAccent">@color/newtube_dark_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Dark.Player" parent="App.Theme.Leanback.Player">
+        <item name="shelfBackground">@color/newtube_dark_background</item>
+        <item name="cardDefaultBackground">@color/newtube_dark_card</item>
+        <item name="cardSelectedBackground">@color/newtube_dark_selected</item>
+        <item name="newtubeCardText">@color/newtube_dark_text</item>
+        <item name="newtubeSelectedText">@color/newtube_dark_text</item>
+        <item name="newtubeForeground">@color/newtube_dark_text</item>
+        <item name="android:colorAccent">@color/newtube_dark_accent</item>
+        <item name="playbackProgressPrimaryColor">@color/newtube_dark_accent</item>
+        <item name="playbackControlsIconHighlightColor">@color/newtube_dark_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Dark.Preferences" parent="App.Theme.Leanback.Preferences">
+        <item name="cardSelectedBackground">@color/newtube_dark_selected</item>
+        <item name="defaultBrandColor">@color/newtube_dark_sidebar</item>
+        <item name="newtubePreferenceBackground">@color/newtube_dark_background</item>
+        <item name="newtubePreferenceText">@color/newtube_dark_text</item>
+        <item name="newtubePreferenceSecondaryText">@color/newtube_dark_text</item>
+        <item name="newtubePreferenceItemBackground">@drawable/newtube_preference_focus</item>
+        <item name="android:colorPrimary">@color/newtube_dark_sidebar</item>
+        <item name="android:colorAccent">@color/newtube_dark_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Amber.Browse" parent="App.Theme.Leanback.Browse">
+        <item name="android:windowBackground">@color/newtube_amber_background</item>
+        <item name="brandColor">@color/newtube_amber_sidebar</item>
+        <item name="brandAccentColor">@color/newtube_amber_accent</item>
+        <item name="rowHeaderStyle">@style/NewTube.RowHeader</item>
+        <item name="shelfBackground">@color/newtube_amber_background</item>
+        <item name="cardDefaultBackground">@color/newtube_amber_card</item>
+        <item name="cardSelectedBackground">@color/newtube_amber_selected</item>
+        <item name="newtubeCardText">@color/newtube_amber_text</item>
+        <item name="newtubeSelectedText">@color/newtube_amber_text</item>
+        <item name="newtubeForeground">@color/newtube_amber_text</item>
+        <item name="android:colorAccent">@color/newtube_amber_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Amber.Player" parent="App.Theme.Leanback.Player">
+        <item name="shelfBackground">@color/newtube_amber_background</item>
+        <item name="cardDefaultBackground">@color/newtube_amber_card</item>
+        <item name="cardSelectedBackground">@color/newtube_amber_selected</item>
+        <item name="newtubeCardText">@color/newtube_amber_text</item>
+        <item name="newtubeSelectedText">@color/newtube_amber_text</item>
+        <item name="newtubeForeground">@color/newtube_amber_text</item>
+        <item name="android:colorAccent">@color/newtube_amber_accent</item>
+        <item name="playbackProgressPrimaryColor">@color/newtube_amber_accent</item>
+        <item name="playbackControlsIconHighlightColor">@color/newtube_amber_accent</item>
+    </style>
+    <style name="App.Theme.NewTube.Amber.Preferences" parent="App.Theme.Leanback.Preferences">
+        <item name="cardSelectedBackground">@color/newtube_amber_selected</item>
+        <item name="defaultBrandColor">@color/newtube_amber_sidebar</item>
+        <item name="newtubePreferenceBackground">@color/newtube_amber_background</item>
+        <item name="newtubePreferenceText">@color/newtube_amber_text</item>
+        <item name="newtubePreferenceSecondaryText">@color/newtube_amber_text</item>
+        <item name="newtubePreferenceItemBackground">@drawable/newtube_preference_focus</item>
+        <item name="android:colorPrimary">@color/newtube_amber_sidebar</item>
+        <item name="android:colorAccent">@color/newtube_amber_accent</item>
+    </style>
+    <style name="NewTube.RowHeader" parent="Widget.Leanback.Row.Header"><item name="android:textColor">?attr/newtubeForeground</item></style>
+</resources>

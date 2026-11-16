@@ -421,6 +421,30 @@ public class MainUIData extends DataChangeBase implements ProfileChangeListener 
                 "App.Theme.Leanback.Blue.OLED.Browse",
                 "App.Theme.Leanback.Blue.Preferences",
                 mContext));
+        mColorSchemes.add(new ColorScheme(R.string.newtube_theme_reading,
+                "App.Theme.NewTube.Reading.Player", "App.Theme.NewTube.Reading.Browse",
+                "App.Theme.NewTube.Reading.Preferences", mContext));
+        mColorSchemes.add(new ColorScheme(R.string.newtube_theme_paper,
+                "App.Theme.NewTube.Paper.Player", "App.Theme.NewTube.Paper.Browse",
+                "App.Theme.NewTube.Paper.Preferences", mContext));
+        mColorSchemes.add(new ColorScheme(R.string.newtube_theme_graphite,
+                "App.Theme.NewTube.Graphite.Player", "App.Theme.NewTube.Graphite.Browse",
+                "App.Theme.NewTube.Graphite.Preferences", mContext));
+        mColorSchemes.add(new ColorScheme(R.string.newtube_theme_midnight,
+                "App.Theme.NewTube.Midnight.Player", "App.Theme.NewTube.Midnight.Browse",
+                "App.Theme.NewTube.Midnight.Preferences", mContext));
+        mColorSchemes.add(new ColorScheme(R.string.newtube_theme_dusk,
+                "App.Theme.NewTube.Dusk.Player", "App.Theme.NewTube.Dusk.Browse",
+                "App.Theme.NewTube.Dusk.Preferences", mContext));
+        mColorSchemes.add(new ColorScheme(R.string.newtube_theme_light,
+                "App.Theme.NewTube.Light.Player", "App.Theme.NewTube.Light.Browse",
+                "App.Theme.NewTube.Light.Preferences", mContext));
+        mColorSchemes.add(new ColorScheme(R.string.newtube_theme_dark,
+                "App.Theme.NewTube.Dark.Player", "App.Theme.NewTube.Dark.Browse",
+                "App.Theme.NewTube.Dark.Preferences", mContext));
+        mColorSchemes.add(new ColorScheme(R.string.newtube_theme_amber,
+                "App.Theme.NewTube.Amber.Player", "App.Theme.NewTube.Amber.Browse",
+                "App.Theme.NewTube.Amber.Preferences", mContext));
     }
 
     private void restoreState() {

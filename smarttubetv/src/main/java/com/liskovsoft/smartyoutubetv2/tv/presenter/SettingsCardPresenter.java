@@ -29,11 +29,11 @@ public class SettingsCardPresenter extends Presenter {
         mDefaultBackgroundColor =
                 ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.cardDefaultBackground));
         mDefaultTextColor =
-                ContextCompat.getColor(context, R.color.card_default_text);
+                ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.newtubeCardText));
         mSelectedBackgroundColor =
-                ContextCompat.getColor(context, R.color.card_selected_background_white);
+                ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.cardSelectedBackground));
         mSelectedTextColor =
-                ContextCompat.getColor(context, R.color.card_selected_text_grey);
+                ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.newtubeSelectedText));
 
         @SuppressLint("InflateParams")
         View container = LayoutInflater.from(context).inflate(R.layout.settings_card, null);

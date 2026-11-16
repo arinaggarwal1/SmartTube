@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <attr name="newtubePreferenceBackground" format="reference"/>
+    <attr name="newtubePreferenceText" format="reference"/>
+    <attr name="newtubePreferenceSecondaryText" format="reference"/>
+    <attr name="newtubePreferenceItemBackground" format="reference"/>
+    <attr name="newtubeCardText" format="reference"/>
+    <attr name="newtubeSelectedText" format="reference"/>
+    <attr name="newtubeForeground" format="reference"/>
     <attr name="brandColor" format="reference"/>
     <attr name="brandAccentColor" format="reference"/>
     <attr name="shelfBackground" format="reference"/>
@@ -26,6 +33,9 @@
 
     <!-- Color scheme: Teal (Default) -->
     <style name="App.Theme.Leanback.Player" parent="Theme.Leanback">
+        <item name="newtubeCardText">@color/card_default_text</item>
+        <item name="newtubeSelectedText">@color/card_selected_text_grey</item>
+        <item name="newtubeForeground">@color/white</item>
         <!-- <item name="android:windowBackground">@null</item> -->
         <!-- NOTE: don't use transparency because the BackgroundManager won't work (BackgroundManager:778) -->
         <item name="android:windowBackground">@android:color/black</item>
@@ -47,6 +57,9 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
     <style name="App.Theme.Leanback.Browse" parent="Theme.Leanback.Browse">
+        <item name="newtubeCardText">@color/card_default_text</item>
+        <item name="newtubeSelectedText">@color/card_selected_text_grey</item>
+        <item name="newtubeForeground">@color/white</item>
         <item name="android:windowBackground">@color/shelf_background_dark</item>
         <item name="brandColor">@color/fastlane_background_dark</item>
         <item name="brandAccentColor">@color/fastlane_background</item>
@@ -81,6 +94,10 @@
     </style>
     <!-- AppDialogFragment style -->
     <style name="App.Theme.Leanback.Preferences.Base" parent="Theme.Leanback">
+        <item name="newtubePreferenceBackground">@color/lb_preference_decor_list_background</item>
+        <item name="newtubePreferenceText">@color/lb_preference_item_primary_text_color</item>
+        <item name="newtubePreferenceSecondaryText">@color/lb_preference_item_secondary_text_color</item>
+        <item name="newtubePreferenceItemBackground">?android:attr/selectableItemBackground</item>
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Leanback</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>

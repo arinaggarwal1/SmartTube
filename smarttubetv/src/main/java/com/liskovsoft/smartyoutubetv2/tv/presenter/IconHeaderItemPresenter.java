@@ -21,6 +21,8 @@ import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.liskovsoft.sharedutils.mylogger.Log;
+import com.liskovsoft.sharedutils.helpers.Helpers;
+import androidx.core.graphics.ColorUtils;
 import com.liskovsoft.smartyoutubetv2.tv.R;
 import com.liskovsoft.smartyoutubetv2.tv.util.ViewUtil;
 
@@ -40,6 +42,8 @@ public class IconHeaderItemPresenter extends RowHeaderPresenter {
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup) {
         mUnselectedAlpha = viewGroup.getResources()
                 .getFraction(R.fraction.lb_browse_header_unselect_alpha, 1, 1);
+        // Keep unselected navigation readable from across the room.
+        mUnselectedAlpha = Math.max(mUnselectedAlpha, 0.8f);
         LayoutInflater inflater = (LayoutInflater) viewGroup.getContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         mDefaultIcon = new ColorDrawable(ContextCompat.getColor(viewGroup.getContext(), R.color.lb_grey));
@@ -76,6 +80,14 @@ public class IconHeaderItemPresenter extends RowHeaderPresenter {
             } else {
                 Drawable icon = mResId > 0 ? ContextCompat.getDrawable(rootView.getContext(), mResId) : mDefaultIcon;
                 iconView.setImageDrawable(icon);
+                int shelfColor = ContextCompat.getColor(rootView.getContext(),
+                        Helpers.getThemeAttr(rootView.getContext(), R.attr.shelfBackground));
+                if (ColorUtils.calculateLuminance(shelfColor) > 0.5) {
+                    iconView.setColorFilter(ContextCompat.getColor(rootView.getContext(),
+                            Helpers.getThemeAttr(rootView.getContext(), R.attr.newtubeForeground)));
+                } else {
+                    iconView.clearColorFilter();
+                }
             }
         }
 

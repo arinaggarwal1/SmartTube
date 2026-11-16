@@ -763,4 +763,12 @@
         <item quantity="one">%s second</item>
         <item quantity="other">%s seconds</item>
     </plurals>
+    <string name="newtube_theme_reading" translatable="false">Reading Room</string>
+    <string name="newtube_theme_paper" translatable="false">Paper</string>
+    <string name="newtube_theme_graphite" translatable="false">Graphite</string>
+    <string name="newtube_theme_midnight" translatable="false">Midnight</string>
+    <string name="newtube_theme_dusk" translatable="false">Dusk</string>
+    <string name="newtube_theme_light" translatable="false">Light</string>
+    <string name="newtube_theme_dark" translatable="false">Dark</string>
+    <string name="newtube_theme_amber" translatable="false">Amber</string>
 </resources>

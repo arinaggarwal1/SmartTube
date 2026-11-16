@@ -23,11 +23,11 @@ public class TagPresenter extends LongClickPresenter {
         sDefaultBackgroundColor =
                 ContextCompat.getColor(parent.getContext(), Helpers.getThemeAttr(parent.getContext(), R.attr.cardDefaultBackground));
         sDefaultTextColor =
-                ContextCompat.getColor(parent.getContext(), R.color.card_default_text);
+                ContextCompat.getColor(parent.getContext(), Helpers.getThemeAttr(parent.getContext(), R.attr.newtubeCardText));
         sSelectedBackgroundColor =
                 ContextCompat.getColor(parent.getContext(), R.color.card_selected_background_white);
         sSelectedTextColor =
-                ContextCompat.getColor(parent.getContext(), R.color.card_selected_text_grey);
+                ContextCompat.getColor(parent.getContext(), Helpers.getThemeAttr(parent.getContext(), R.attr.newtubeSelectedText));
 
         TagCardView cardView = new TagCardView(parent.getContext()) {
             @Override
